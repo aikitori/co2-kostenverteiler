@@ -34,6 +34,10 @@ Clone the repository:
 
 Open the index.html file in your browser to start using the app.
 
+## Link
+
+[https://www.bmwk.de/Redaktion/DE/Artikel/Energie/berechnung-aufteilung-kohlendioxidkosten](https://www.bmwk.de/Redaktion/DE/Artikel/Energie/berechnung-aufteilung-kohlendioxidkosten)
+
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.

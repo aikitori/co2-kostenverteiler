@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const resultDiv = document.getElementById("result");
 
     // Default values
-    const DEFAULT_CONVERSION_FACTOR = 0.233; // kg CO₂ per kWh
+    const DEFAULT_CONVERSION_FACTOR = 0.20088; // kg CO₂ per kWh
     const DEFAULT_CO2_COST = 30; // € per tonne CO₂
     const DEFAULT_VAT_RATE = 19; // VAT in %
     const TONNE_TO_KG = 1000; // Conversion factor from tonnes to kilograms
