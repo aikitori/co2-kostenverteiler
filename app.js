@@ -76,11 +76,20 @@ document.addEventListener("DOMContentLoaded", function () {
         // Display the result
         resultDiv.style.display = "block";
         resultDiv.innerHTML = `
+            Wohnfläche: ${livingArea} m²<br>
+            Energieverbrauch: ${energyConsumption} kWh<br>
+            <br>
+            kWh zu kg CO₂ Faktor: ${conversionFactor} kg CO2/kWh<br>
+            CO₂-Kosten: ${co2CostPerTonne} €/t<br>
+            <br>
             Gesamte CO₂-Emissionen: ${totalCO2.toFixed(2)} kg<br>
             CO₂ pro m²: ${co2PerSquareMeter.toFixed(2)} kg/m²<br>
+            <br>
             Anteil Vermietende: ${(valueMultiplier * 100).toFixed(2)} %<br>
+            <br>
             Gesamtkosten (Netto): ${netCost.toFixed(2)} €<br>
             MwSt (${vatRate}%): ${vatAmount.toFixed(2)} €<br>
+            <br>
             Gesamtkosten (Brutto): ${grossCost.toFixed(2)} €<br>
             Kostenanteil Mietende (Brutto): ${totalCostMieter.toFixed(2)} €<br>
             Kostenanteil Vermietende (Brutto): ${totalCostvermieter.toFixed(2)} €
