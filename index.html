@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CO2 - Kostencerteiler</title>
+    <title>CO2 - Kostenverteiler</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
     <script type="text/javascript" src="app.js"></script>
 </head>
@@ -20,38 +20,59 @@
 
     <!-- Main Content Section -->
     <div class="container" style="margin-top: 20px;">
-        <!-- Living Area Input -->
-        <div class="field">
-            <label class="label">Wohnfläche in m²</label>
-            <div class="control">
-                <input id="living_area" class="input" type="text" placeholder="Geben Sie die Wohnfläche ein" />
+        <div class="columns is-desktop is-multiline">
+            <!-- Living Area Input -->
+            <div class="column ">
+                <div class="field">
+                    <label class="label">Wohnfläche in m²</label>
+                    <div class="control">
+                        <input id="living_area" class="input" type="text" placeholder="" />
+                    </div>
+                </div>
             </div>
-        </div>
-        
-        <!-- Energy Consumption Input -->
-        <div class="field">
-            <label class="label">Energieverbrauch in kWh</label>
-            <div class="control">
-                <input id="energy_consumption" class="input" type="text" placeholder="Geben Sie den Energieverbrauch ein" />
-            </div>
-        </div>
-        
-        <!-- Conversion Factor Input -->
-        <div class="field">
-            <label class="label">kWh zu kg CO₂ Faktor</label>
-            <div class="control">
-                <input id="conversion_factor" class="input" type="text" placeholder="Standardwert: 0.233 kg CO₂/kWh" />
-            </div>
-            <p class="help">Standardwert wird verwendet, wenn leer gelassen</p>
-        </div>
 
-        <!-- CO2 Cost Input -->
-        <div class="field">
-            <label class="label">CO₂-Kosten (€ pro Tonne CO₂)</label>
-            <div class="control">
-                <input id="co2_cost" class="input" type="text" placeholder="Standardwert: 30 € pro Tonne CO₂" />
+            <!-- Energy Consumption Input -->
+            <div class="column ">
+                <div class="field">
+                    <label class="label">Energieverbrauch in kWh</label>
+                    <div class="control">
+                        <input id="energy_consumption" class="input" type="text" placeholder="" />
+                    </div>
+                </div>
             </div>
-            <p class="help">Standardwert wird verwendet, wenn leer gelassen</p>
+
+            <!-- Conversion Factor Input -->
+            <div class="column ">
+                <div class="field">
+                    <label class="label">kWh zu kg CO₂ Faktor</label>
+                    <div class="control">
+                        <input id="conversion_factor" class="input" type="text" placeholder="0.233 kg CO₂/kWh" />
+                    </div>
+                    <p class="help">Standardwert wird verwendet, wenn leer gelassen</p>
+                </div>
+            </div>
+
+            <!-- CO2 Cost Input -->
+            <div class="column ">
+                <div class="field">
+                    <label class="label">CO₂-Kosten (€ pro Tonne CO₂)</label>
+                    <div class="control">
+                        <input id="co2_cost" class="input" type="text" placeholder="30 € pro Tonne CO₂" />
+                    </div>
+                    <p class="help">Standardwert wird verwendet, wenn leer gelassen</p>
+                </div>
+            </div>
+
+            <!-- Mehrwertsteuer (VAT) Input -->
+            <div class="column ">
+                <div class="field">
+                    <label class="label">Mehrwertsteuer (MwSt) in %</label>
+                    <div class="control">
+                        <input id="vat_rate" class="input" type="text" value="19" placeholder="19 %" />
+                    </div>
+                    <p class="help">Standardwert 19% wird verwendet, wenn leer gelassen</p>
+                </div>
+            </div>
         </div>
 
         <!-- Result Display -->
@@ -62,7 +83,7 @@
     <footer class="footer" style="margin-top: 40px; padding: 20px 0;">
         <div class="content has-text-centered">
             <p>
-                <strong>CO2 - Kostenverteiler</strong> von <a href="https://github.com/aikitori/co2-kostenverteiler" target="_blank">aikitori</a>.
+                <strong>CO2 - Kostenverteiler</strong> von <a href="https://github.com/yourgithubusername" target="_blank">Ihr Name</a>.
             </p>
             <p>
                 Diese Anwendung ist für Bildungszwecke gedacht. Ich übernehme keine Haftung für etwaige Fehler oder ungenaue Berechnungen.
